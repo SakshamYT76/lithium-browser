@@ -1,0 +1,72 @@
+{
+  "name": "lithium-browser",
+  "version": "0.2.0",
+  "description": "Lithium is a privacy-focused, customizable Chromium-powered desktop browser project.",
+  "main": "main.cjs",
+  "author": "Lithium Project",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "node scripts/test-core.cjs && node --check main.cjs && node --check preload.cjs && node --check src/renderer.js && node --check src/bang-resolver.cjs && node --check src/url-policy.cjs && node --check src/custom-bangs.cjs && node --check scripts/fetch-bangs.mjs",
+    "fetch-bangs": "node scripts/fetch-bangs.mjs",
+    "package:win": "npm run fetch-bangs && electron-builder --win nsis portable --x64",
+    "package:win:offline-seed": "electron-builder --win nsis portable --x64",
+    "package:dir": "electron-builder --dir",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "^26.2.0"
+  },
+  "build": {
+    "appId": "com.lithium.browser",
+    "productName": "Lithium Browser",
+    "asar": true,
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "src/**/*",
+      "resources/**/*",
+      "assets/lithium.png",
+      "!resources/bangs-seed.json.map"
+    ],
+    "win": {
+      "icon": "assets/lithium.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Lithium-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Lithium Browser",
+      "deleteAppDataOnUninstall": false
+    },
+    "portable": {
+      "artifactName": "Lithium-Portable-${version}-${arch}.${ext}"
+    }
+  }
+}

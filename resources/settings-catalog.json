@@ -1,0 +1,2249 @@
+[
+  {
+    "id": "startupBehavior",
+    "category": "General",
+    "label": "On startup",
+    "type": "select",
+    "default": "newtab",
+    "description": "Choose what opens when Lithium starts.",
+    "options": [
+      [
+        "newtab",
+        "New tab"
+      ],
+      [
+        "homepage",
+        "Homepage"
+      ],
+      [
+        "restore",
+        "Restore previous session"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "homepageUrl",
+    "category": "General",
+    "label": "Homepage URL",
+    "type": "text",
+    "default": "https://duckduckgo.com",
+    "description": "URL used by the Home button and optional homepage startup.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "openExternalLinksInNewTab",
+    "category": "General",
+    "label": "Open external links in a new tab",
+    "type": "toggle",
+    "default": true,
+    "description": "Open links that request a new window as a new Lithium tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "confirmCloseMultipleTabs",
+    "category": "General",
+    "label": "Confirm when closing multiple tabs",
+    "type": "toggle",
+    "default": true,
+    "description": "Ask before closing the whole window when several tabs are open.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "reopenClosedTabs",
+    "category": "General",
+    "label": "Enable reopen-closed-tab shortcut",
+    "type": "toggle",
+    "default": true,
+    "description": "Keep a short in-memory list for Ctrl+Shift+T.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "warnOnQuit",
+    "category": "General",
+    "label": "Show quit confirmation",
+    "type": "toggle",
+    "default": false,
+    "description": "Ask before quitting Lithium.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "defaultProtocolHttps",
+    "category": "General",
+    "label": "Prefer HTTPS for typed domains",
+    "type": "toggle",
+    "default": true,
+    "description": "Typed domain names use HTTPS first.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "rememberWindowBounds",
+    "category": "General",
+    "label": "Remember window size",
+    "type": "toggle",
+    "default": true,
+    "description": "Remember normal window size between launches.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "openNewTabsInBackground",
+    "category": "General",
+    "label": "Open new tabs in background",
+    "type": "toggle",
+    "default": false,
+    "description": "Keep the current tab active when creating a new tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "restoreLastSession",
+    "category": "General",
+    "label": "Restore previous tabs on launch",
+    "type": "toggle",
+    "default": false,
+    "description": "Restore recent tab URLs when Lithium starts.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "closeOnLastTab",
+    "category": "General",
+    "label": "Close window when last tab closes",
+    "type": "toggle",
+    "default": false,
+    "description": "When disabled, closing the last tab opens the new-tab page.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "reopenClosedWindows",
+    "category": "General",
+    "label": "Reopen previously closed window",
+    "type": "toggle",
+    "default": false,
+    "description": "Experimental session history; not in the first release.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "enableSpellcheck",
+    "category": "General",
+    "label": "Spell checking",
+    "type": "toggle",
+    "default": false,
+    "description": "Enable Chromium spell checking in webpages. Restart Lithium after changing this preference.",
+    "options": [],
+    "status": "available",
+    "restartRequired": true
+  },
+  {
+    "id": "uiLanguage",
+    "category": "General",
+    "label": "Browser UI language",
+    "type": "select",
+    "default": "en",
+    "description": "Language for Lithium menus and settings.",
+    "options": [
+      [
+        "en",
+        "English"
+      ],
+      [
+        "en-IN",
+        "English (India)"
+      ],
+      [
+        "hi",
+        "Hindi"
+      ]
+    ],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "checkUpdatesAutomatically",
+    "category": "General",
+    "label": "Check for updates automatically",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic application updates are not configured in this source build.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "startupRestorePinnedTabs",
+    "category": "General",
+    "label": "Restore pinned tabs",
+    "type": "toggle",
+    "default": true,
+    "description": "Restore pinned tab metadata with the previous session.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "askBeforeOpeningExternalApps",
+    "category": "General",
+    "label": "Confirm external application links",
+    "type": "toggle",
+    "default": true,
+    "description": "Ask before opening mailto and other external application links.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "closeTabsOnExit",
+    "category": "General",
+    "label": "Close tabs on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Do not persist open tabs for next launch.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showQuitButton",
+    "category": "General",
+    "label": "Show quit action in app menu",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the in-app application menu and quit action.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "defaultSearchEngine",
+    "category": "Search & Address Bar",
+    "label": "Default search engine",
+    "type": "select",
+    "default": "duckduckgo",
+    "description": "Choose the provider used for regular address-bar searches.",
+    "options": [
+      [
+        "duckduckgo",
+        "DuckDuckGo"
+      ],
+      [
+        "google",
+        "Google"
+      ],
+      [
+        "brave",
+        "Brave Search"
+      ],
+      [
+        "startpage",
+        "Startpage"
+      ],
+      [
+        "bing",
+        "Bing"
+      ],
+      [
+        "ecosia",
+        "Ecosia"
+      ],
+      [
+        "qwant",
+        "Qwant"
+      ],
+      [
+        "mojeek",
+        "Mojeek"
+      ],
+      [
+        "custom",
+        "Custom search URL"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "customSearchUrl",
+    "category": "Search & Address Bar",
+    "label": "Custom search URL template",
+    "type": "text",
+    "default": "https://example.com/search?q={query}",
+    "description": "Used when Custom search URL is selected. Must contain {query}.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "enableBangCommands",
+    "category": "Search & Address Bar",
+    "label": "Enable !bang commands",
+    "type": "toggle",
+    "default": true,
+    "description": "Resolve shortcuts such as !yt TechnOGamerz locally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "bangPrefix",
+    "category": "Search & Address Bar",
+    "label": "Bang prefix",
+    "type": "select",
+    "default": "!",
+    "description": "Prefix used to trigger shortcuts.",
+    "options": [
+      [
+        "!",
+        "!"
+      ],
+      [
+        "/",
+        "/"
+      ],
+      [
+        ";",
+        ";"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "commandSuggestions",
+    "category": "Search & Address Bar",
+    "label": "Show bang suggestions",
+    "type": "toggle",
+    "default": true,
+    "description": "Suggest matching local search shortcuts while typing.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "addressSuggestions",
+    "category": "Search & Address Bar",
+    "label": "Show address-bar suggestions",
+    "type": "toggle",
+    "default": true,
+    "description": "Show matching commands, bookmarks, and local history.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "historySuggestions",
+    "category": "Search & Address Bar",
+    "label": "Use history in suggestions",
+    "type": "toggle",
+    "default": true,
+    "description": "Suggest pages in saved local browsing history.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "bookmarkSuggestions",
+    "category": "Search & Address Bar",
+    "label": "Use bookmarks in suggestions",
+    "type": "toggle",
+    "default": true,
+    "description": "Suggest matching saved bookmarks.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "autocompleteDomains",
+    "category": "Search & Address Bar",
+    "label": "Autocomplete common domain prefixes",
+    "type": "toggle",
+    "default": true,
+    "description": "Treat domain-like input as navigation rather than a search.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "openSearchInNewTab",
+    "category": "Search & Address Bar",
+    "label": "Open address-bar searches in a new tab",
+    "type": "toggle",
+    "default": false,
+    "description": "Search from the address bar in a fresh tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "searchInNewTabBackground",
+    "category": "Search & Address Bar",
+    "label": "Keep search results in background",
+    "type": "toggle",
+    "default": false,
+    "description": "When searching in a new tab, keep the current tab selected.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showSearchEngineIndicator",
+    "category": "Search & Address Bar",
+    "label": "Show active search provider",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the selected provider in the address bar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "maxAddressSuggestions",
+    "category": "Search & Address Bar",
+    "label": "Maximum address suggestions",
+    "type": "number",
+    "default": 8,
+    "description": "Maximum number of suggestions shown.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "rememberSearchHistory",
+    "category": "Search & Address Bar",
+    "label": "Remember search queries",
+    "type": "toggle",
+    "default": true,
+    "description": "Search URLs may appear in local history if history saving is enabled.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "searchQueryPrivacy",
+    "category": "Search & Address Bar",
+    "label": "Hide search query suggestions by default",
+    "type": "toggle",
+    "default": false,
+    "description": "Remote suggestion providers are not integrated in this build, so typed text is never sent to a suggestion service. A granular suggestion-provider feature is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "bangFallbackToSearch",
+    "category": "Search & Address Bar",
+    "label": "Search normally for unknown bangs",
+    "type": "toggle",
+    "default": true,
+    "description": "Unknown bang-like input falls back to the default search provider.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "caseInsensitiveBangs",
+    "category": "Search & Address Bar",
+    "label": "Match bang commands regardless of case",
+    "type": "toggle",
+    "default": true,
+    "description": "Allow !YT and !yt to select the same command.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "addressAutoSelect",
+    "category": "Search & Address Bar",
+    "label": "Select address-bar text on focus",
+    "type": "toggle",
+    "default": true,
+    "description": "Select the full URL when focusing the address bar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "searchUsePrivateEngine",
+    "category": "Search & Address Bar",
+    "label": "Use a separate private-window search engine",
+    "type": "toggle",
+    "default": true,
+    "description": "Preference reserved for private sessions, which are planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "searchSuggestionSource",
+    "category": "Search & Address Bar",
+    "label": "Suggestion source",
+    "type": "select",
+    "default": "local",
+    "description": "Choose local suggestions or disable address-bar suggestions entirely. No remote query suggestions are sent.",
+    "options": [
+      [
+        "local",
+        "Local history and commands only"
+      ],
+      [
+        "off",
+        "No suggestions"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "searchOpenOnEnter",
+    "category": "Search & Address Bar",
+    "label": "Submit address-bar searches with Enter",
+    "type": "toggle",
+    "default": true,
+    "description": "Enter-to-submit behavior is fixed to standard browser behavior in this build.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "customBangAlias",
+    "category": "Search & Address Bar",
+    "label": "Custom bang alias",
+    "type": "text",
+    "default": "!l",
+    "description": "An optional command such as !l that searches the default search engine.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "theme",
+    "category": "Appearance",
+    "label": "Theme",
+    "type": "select",
+    "default": "dark",
+    "description": "Choose Lithium’s interface theme.",
+    "options": [
+      [
+        "dark",
+        "Dark"
+      ],
+      [
+        "light",
+        "Light"
+      ],
+      [
+        "system",
+        "Follow system"
+      ],
+      [
+        "midnight",
+        "Midnight"
+      ],
+      [
+        "paper",
+        "Paper"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "accentColor",
+    "category": "Appearance",
+    "label": "Accent color",
+    "type": "select",
+    "default": "violet",
+    "description": "Accent used for selected controls and highlights.",
+    "options": [
+      [
+        "violet",
+        "Violet"
+      ],
+      [
+        "blue",
+        "Blue"
+      ],
+      [
+        "green",
+        "Green"
+      ],
+      [
+        "orange",
+        "Orange"
+      ],
+      [
+        "red",
+        "Red"
+      ],
+      [
+        "teal",
+        "Teal"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "density",
+    "category": "Appearance",
+    "label": "Interface density",
+    "type": "select",
+    "default": "comfortable",
+    "description": "Choose compact or comfortable spacing.",
+    "options": [
+      [
+        "compact",
+        "Compact"
+      ],
+      [
+        "comfortable",
+        "Comfortable"
+      ],
+      [
+        "spacious",
+        "Spacious"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "tabPosition",
+    "category": "Appearance",
+    "label": "Tab strip position",
+    "type": "select",
+    "default": "top",
+    "description": "Choose where tabs appear.",
+    "options": [
+      [
+        "top",
+        "Top"
+      ],
+      [
+        "bottom",
+        "Bottom"
+      ],
+      [
+        "left",
+        "Left / vertical"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "tabShape",
+    "category": "Appearance",
+    "label": "Tab shape",
+    "type": "select",
+    "default": "rounded",
+    "description": "Choose the tab outline.",
+    "options": [
+      [
+        "rounded",
+        "Rounded"
+      ],
+      [
+        "square",
+        "Square"
+      ],
+      [
+        "pill",
+        "Pill"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showBookmarksBar",
+    "category": "Appearance",
+    "label": "Show bookmarks bar",
+    "type": "toggle",
+    "default": true,
+    "description": "Show saved bookmarks under the toolbar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showSidebar",
+    "category": "Appearance",
+    "label": "Show browser sidebar",
+    "type": "toggle",
+    "default": false,
+    "description": "Show a compact side panel while browsing.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "sidebarPosition",
+    "category": "Appearance",
+    "label": "Sidebar position",
+    "type": "select",
+    "default": "left",
+    "description": "Choose sidebar edge.",
+    "options": [
+      [
+        "left",
+        "Left"
+      ],
+      [
+        "right",
+        "Right"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showHomeButton",
+    "category": "Appearance",
+    "label": "Show Home button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show a Home shortcut beside navigation controls.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showDownloadsButton",
+    "category": "Appearance",
+    "label": "Show Downloads button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the download manager shortcut.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showShieldButton",
+    "category": "Appearance",
+    "label": "Show Shield button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show quick privacy controls.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showBookmarkButton",
+    "category": "Appearance",
+    "label": "Show Bookmark button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show a bookmark toggle beside the address bar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showStatusBar",
+    "category": "Appearance",
+    "label": "Show status bar",
+    "type": "toggle",
+    "default": true,
+    "description": "Show a slim status bar for current page state.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showNewTabClock",
+    "category": "Appearance",
+    "label": "Show clock on new tab",
+    "type": "toggle",
+    "default": true,
+    "description": "Display the local time on the new-tab page.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showSearchCard",
+    "category": "Appearance",
+    "label": "Show new-tab search card",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the central search box on the new-tab page.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showQuickLinks",
+    "category": "Appearance",
+    "label": "Show quick links on new tab",
+    "type": "toggle",
+    "default": true,
+    "description": "Display a small grid of editable shortcuts.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "newTabLayout",
+    "category": "Appearance",
+    "label": "New-tab layout",
+    "type": "select",
+    "default": "centered",
+    "description": "Choose the new-tab layout.",
+    "options": [
+      [
+        "centered",
+        "Centered"
+      ],
+      [
+        "minimal",
+        "Minimal"
+      ],
+      [
+        "dashboard",
+        "Dashboard"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "newTabBackground",
+    "category": "Appearance",
+    "label": "New-tab background",
+    "type": "select",
+    "default": "gradient",
+    "description": "Choose a built-in background.",
+    "options": [
+      [
+        "gradient",
+        "Soft gradient"
+      ],
+      [
+        "plain",
+        "Plain"
+      ],
+      [
+        "mesh",
+        "Mesh"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "customWallpaperUrl",
+    "category": "Appearance",
+    "label": "Custom wallpaper URL",
+    "type": "text",
+    "default": "",
+    "description": "Optional HTTPS wallpaper URL for the new-tab page.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "animations",
+    "category": "Appearance",
+    "label": "Interface animations",
+    "type": "toggle",
+    "default": true,
+    "description": "Enable subtle transitions in the Lithium interface.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blurEffects",
+    "category": "Appearance",
+    "label": "Translucent effects",
+    "type": "toggle",
+    "default": false,
+    "description": "Use soft translucent surfaces where supported.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "uiFont",
+    "category": "Appearance",
+    "label": "Interface font",
+    "type": "select",
+    "default": "system",
+    "description": "Choose the interface font.",
+    "options": [
+      [
+        "system",
+        "System default"
+      ],
+      [
+        "Arial",
+        "Arial"
+      ],
+      [
+        "Inter",
+        "Inter (if installed)"
+      ],
+      [
+        "Segoe UI",
+        "Segoe UI"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "uiFontScale",
+    "category": "Appearance",
+    "label": "Interface text size",
+    "type": "select",
+    "default": "normal",
+    "description": "Scale Lithium interface text.",
+    "options": [
+      [
+        "small",
+        "Small"
+      ],
+      [
+        "normal",
+        "Normal"
+      ],
+      [
+        "large",
+        "Large"
+      ],
+      [
+        "xlarge",
+        "Extra large"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "cornerRadius",
+    "category": "Appearance",
+    "label": "Corner radius",
+    "type": "select",
+    "default": "medium",
+    "description": "Choose the rounding used by browser controls.",
+    "options": [
+      [
+        "none",
+        "None"
+      ],
+      [
+        "small",
+        "Small"
+      ],
+      [
+        "medium",
+        "Medium"
+      ],
+      [
+        "large",
+        "Large"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showAppMenuButton",
+    "category": "Appearance",
+    "label": "Show app menu button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the Lithium menu for settings and browser pages.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showTabCount",
+    "category": "Appearance",
+    "label": "Show open tab count",
+    "type": "toggle",
+    "default": false,
+    "description": "Show tab count in the tab-strip footer.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "highContrastUi",
+    "category": "Appearance",
+    "label": "High-contrast interface",
+    "type": "toggle",
+    "default": false,
+    "description": "Increase borders and contrast for UI elements.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "focusOutlines",
+    "category": "Appearance",
+    "label": "Visible keyboard focus",
+    "type": "toggle",
+    "default": true,
+    "description": "Keep clear focus outlines for keyboard navigation.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "hideWindowTitleText",
+    "category": "Appearance",
+    "label": "Hide window title text",
+    "type": "toggle",
+    "default": false,
+    "description": "Use a compact titlebar without descriptive window text.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showPageLoadingProgress",
+    "category": "Appearance",
+    "label": "Show page loading indicator",
+    "type": "toggle",
+    "default": true,
+    "description": "Show loading state on the active tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showUrlProtocol",
+    "category": "Appearance",
+    "label": "Show URL protocol",
+    "type": "toggle",
+    "default": false,
+    "description": "Display https:// prefix in the address bar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "toolbarLayout",
+    "category": "Appearance",
+    "label": "Toolbar layout",
+    "type": "select",
+    "default": "standard",
+    "description": "Choose toolbar arrangement.",
+    "options": [
+      [
+        "standard",
+        "Standard"
+      ],
+      [
+        "minimal",
+        "Minimal"
+      ],
+      [
+        "wide",
+        "Wide"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "customAccentHex",
+    "category": "Appearance",
+    "label": "Custom accent color",
+    "type": "text",
+    "default": "",
+    "description": "Override the selected accent preset with a custom six-digit hex color such as #8b5cf6.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "trackerProtection",
+    "category": "Privacy & Security",
+    "label": "Block known trackers",
+    "type": "toggle",
+    "default": true,
+    "description": "Block requests to a locally bundled list of known tracking domains.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "stripTrackingParameters",
+    "category": "Privacy & Security",
+    "label": "Remove common tracking parameters",
+    "type": "toggle",
+    "default": true,
+    "description": "Remove common tracking query parameters from top-level URL input.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blockThirdPartyCookies",
+    "category": "Privacy & Security",
+    "label": "Block third-party cookies",
+    "type": "toggle",
+    "default": true,
+    "description": "Strip cookie request/response headers for cross-site requests where detectable.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "sendDoNotTrack",
+    "category": "Privacy & Security",
+    "label": "Send Do Not Track header",
+    "type": "toggle",
+    "default": true,
+    "description": "Attach DNT: 1 to requests.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "sendGlobalPrivacyControl",
+    "category": "Privacy & Security",
+    "label": "Send Global Privacy Control signal",
+    "type": "toggle",
+    "default": true,
+    "description": "Attach Sec-GPC: 1 to requests where supported.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blockPopups",
+    "category": "Privacy & Security",
+    "label": "Block script-created popups",
+    "type": "toggle",
+    "default": true,
+    "description": "Block unsolicited windows opened by webpages.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowSiteNotifications",
+    "category": "Privacy & Security",
+    "label": "Allow website notification permissions",
+    "type": "toggle",
+    "default": false,
+    "description": "Grant notification permissions only when enabled here.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowCamera",
+    "category": "Privacy & Security",
+    "label": "Allow camera permission requests",
+    "type": "toggle",
+    "default": false,
+    "description": "Allow camera permission requests globally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowMicrophone",
+    "category": "Privacy & Security",
+    "label": "Allow microphone permission requests",
+    "type": "toggle",
+    "default": false,
+    "description": "Allow microphone permission requests globally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowGeolocation",
+    "category": "Privacy & Security",
+    "label": "Allow location permission requests",
+    "type": "toggle",
+    "default": false,
+    "description": "Allow geolocation permission requests globally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowClipboardRead",
+    "category": "Privacy & Security",
+    "label": "Allow clipboard read permission",
+    "type": "toggle",
+    "default": false,
+    "description": "Allow clipboard read permission requests globally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "clearCookiesOnExit",
+    "category": "Privacy & Security",
+    "label": "Clear cookies on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Clear browser cookies when the app quits.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "clearCacheOnExit",
+    "category": "Privacy & Security",
+    "label": "Clear cache on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Clear cached web resources when the app quits.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "clearSiteDataOnExit",
+    "category": "Privacy & Security",
+    "label": "Clear site storage on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Clear local storage, IndexedDB, and other site data on exit.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "clearHistoryOnExit",
+    "category": "Privacy & Security",
+    "label": "Clear history on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Clear local browsing history when the app quits.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "saveBrowsingHistory",
+    "category": "Privacy & Security",
+    "label": "Save local browsing history",
+    "type": "toggle",
+    "default": true,
+    "description": "Store a local history list on this device.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "saveDownloadsHistory",
+    "category": "Privacy & Security",
+    "label": "Save download history",
+    "type": "toggle",
+    "default": true,
+    "description": "Store recent download metadata locally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blockRemoteFonts",
+    "category": "Privacy & Security",
+    "label": "Block third-party web fonts",
+    "type": "toggle",
+    "default": false,
+    "description": "Block cross-site font requests.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blockImages",
+    "category": "Privacy & Security",
+    "label": "Block webpage images",
+    "type": "toggle",
+    "default": false,
+    "description": "Block image requests globally.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "hideReferrer",
+    "category": "Privacy & Security",
+    "label": "Reduce cross-site referrer data",
+    "type": "toggle",
+    "default": true,
+    "description": "Trim referrer headers when crossing site boundaries.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "alwaysPrivateMode",
+    "category": "Privacy & Security",
+    "label": "Always use private browsing",
+    "type": "toggle",
+    "default": false,
+    "description": "Dedicated private-session mode is not yet implemented.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "httpsOnlyMode",
+    "category": "Privacy & Security",
+    "label": "HTTPS-only navigation mode",
+    "type": "toggle",
+    "default": false,
+    "description": "Upgrade top-level HTTP navigations to HTTPS. Sites without HTTPS may not open.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "secureDns",
+    "category": "Privacy & Security",
+    "label": "Secure DNS / DNS-over-HTTPS",
+    "type": "toggle",
+    "default": false,
+    "description": "DoH provider configuration needs engine-level integration.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "fingerprintResistance",
+    "category": "Privacy & Security",
+    "label": "Advanced fingerprint resistance",
+    "type": "toggle",
+    "default": false,
+    "description": "Do not enable a fake protection switch; deep fingerprint mitigations are planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "safeBrowsingProtection",
+    "category": "Privacy & Security",
+    "label": "Safe browsing integration",
+    "type": "toggle",
+    "default": false,
+    "description": "Reputation-service integration is not configured.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "webrtcIpProtection",
+    "category": "Privacy & Security",
+    "label": "Restrict WebRTC network exposure",
+    "type": "toggle",
+    "default": false,
+    "description": "Advanced WebRTC IP policy requires browser-runtime validation.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "blockThirdPartyStorage",
+    "category": "Privacy & Security",
+    "label": "Block all third-party storage",
+    "type": "toggle",
+    "default": false,
+    "description": "Third-party storage partitioning is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "clearFormDataOnExit",
+    "category": "Privacy & Security",
+    "label": "Clear saved form data on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Saved form-data management is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "telemetryEnabled",
+    "category": "Privacy & Security",
+    "label": "Anonymous product telemetry",
+    "type": "toggle",
+    "default": false,
+    "description": "Lithium has no product-telemetry endpoint in this build. Enabling telemetry is not available.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "crashReportsEnabled",
+    "category": "Privacy & Security",
+    "label": "Send crash reports",
+    "type": "toggle",
+    "default": false,
+    "description": "Crash-report uploads are not configured. Crash information remains local.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "confirmCloseTab",
+    "category": "Tabs & Browsing",
+    "label": "Confirm closing the active tab",
+    "type": "toggle",
+    "default": false,
+    "description": "Ask before closing an individual tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "middleClickClosesTab",
+    "category": "Tabs & Browsing",
+    "label": "Middle-click closes a tab",
+    "type": "toggle",
+    "default": true,
+    "description": "Use middle mouse click to close a tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showTabCloseButtons",
+    "category": "Tabs & Browsing",
+    "label": "Show tab close buttons",
+    "type": "toggle",
+    "default": true,
+    "description": "Show close controls on tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showNewTabButton",
+    "category": "Tabs & Browsing",
+    "label": "Show new-tab button",
+    "type": "toggle",
+    "default": true,
+    "description": "Show a button to add a new tab.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showTabFavicons",
+    "category": "Tabs & Browsing",
+    "label": "Show website indicators in tabs",
+    "type": "toggle",
+    "default": true,
+    "description": "Display a local letter/globe indicator on tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "rememberLastActiveTab",
+    "category": "Tabs & Browsing",
+    "label": "Remember active tab",
+    "type": "toggle",
+    "default": true,
+    "description": "Restore the last selected tab when session restore is enabled.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "muteAllTabs",
+    "category": "Tabs & Browsing",
+    "label": "Mute all browser tabs",
+    "type": "toggle",
+    "default": false,
+    "description": "Mute audio from all current and future web tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "backgroundTabThrottling",
+    "category": "Tabs & Browsing",
+    "label": "Throttle background tabs",
+    "type": "toggle",
+    "default": true,
+    "description": "Allow Chromium to throttle background pages (restart may be required).",
+    "options": [],
+    "status": "available",
+    "restartRequired": true
+  },
+  {
+    "id": "restoreScrollPosition",
+    "category": "Tabs & Browsing",
+    "label": "Restore scroll position",
+    "type": "toggle",
+    "default": false,
+    "description": "Per-page scroll restoration is handled by websites; browser restoration is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "verticalTabTree",
+    "category": "Tabs & Browsing",
+    "label": "Nested vertical tab tree",
+    "type": "toggle",
+    "default": false,
+    "description": "Nested tab trees are planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "autoGroupTabs",
+    "category": "Tabs & Browsing",
+    "label": "Automatically group related tabs",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic tab grouping is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "showTabMemoryUse",
+    "category": "Tabs & Browsing",
+    "label": "Show memory use in each tab",
+    "type": "toggle",
+    "default": false,
+    "description": "Per-tab memory reporting is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "tabSuspension",
+    "category": "Tabs & Browsing",
+    "label": "Suspend inactive tabs",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic tab discarding needs additional validation.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "compactTabLabels",
+    "category": "Tabs & Browsing",
+    "label": "Compact tab labels",
+    "type": "toggle",
+    "default": true,
+    "description": "Use smaller titles on narrow tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showUrlOnHover",
+    "category": "Tabs & Browsing",
+    "label": "Show link preview in status bar",
+    "type": "toggle",
+    "default": true,
+    "description": "Display hovered link destinations in the status bar.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "askDownloadLocation",
+    "category": "Downloads",
+    "label": "Ask where to save each download",
+    "type": "toggle",
+    "default": false,
+    "description": "Show a Save As dialog for each new download.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "downloadDirectory",
+    "category": "Downloads",
+    "label": "Download folder path",
+    "type": "text",
+    "default": "",
+    "description": "Optional custom download folder; leave blank for system Downloads.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showDownloadCompletionToast",
+    "category": "Downloads",
+    "label": "Show download completion messages",
+    "type": "toggle",
+    "default": true,
+    "description": "Show a desktop notification when a download finishes.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "openDownloadsPanelOnStart",
+    "category": "Downloads",
+    "label": "Open downloads page after starting a download",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatically switch to the download manager for new downloads.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "maxConcurrentDownloads",
+    "category": "Downloads",
+    "label": "Maximum active downloads",
+    "type": "number",
+    "default": 5,
+    "description": "Display preference for concurrent downloads. Chromium controls actual network concurrency.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "autoClearDownloadHistoryOnExit",
+    "category": "Downloads",
+    "label": "Clear download list on exit",
+    "type": "toggle",
+    "default": false,
+    "description": "Delete saved download metadata at application exit.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "confirmDangerousDownloads",
+    "category": "Downloads",
+    "label": "Confirm executable downloads",
+    "type": "toggle",
+    "default": true,
+    "description": "Show an app warning before opening a downloaded executable.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showDownloadFileSizes",
+    "category": "Downloads",
+    "label": "Show download file sizes",
+    "type": "toggle",
+    "default": true,
+    "description": "Show file sizes in the download manager.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "pauseDownloadsOnBattery",
+    "category": "Downloads",
+    "label": "Pause downloads on battery",
+    "type": "toggle",
+    "default": false,
+    "description": "Battery-aware download suspension is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "autoOpenDownloadsFolder",
+    "category": "Downloads",
+    "label": "Open downloads folder on completion",
+    "type": "toggle",
+    "default": false,
+    "description": "Open the destination folder automatically when a download completes.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "downloadNotifications",
+    "category": "Downloads",
+    "label": "Use system download notifications",
+    "type": "toggle",
+    "default": true,
+    "description": "Allow system notifications for download state.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "pageZoom",
+    "category": "Performance",
+    "label": "Default page zoom",
+    "type": "number",
+    "default": 100,
+    "description": "Default zoom percentage applied to new web tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "hardwareAcceleration",
+    "category": "Performance",
+    "label": "Hardware acceleration",
+    "type": "toggle",
+    "default": true,
+    "description": "Use Chromium hardware acceleration when available.",
+    "options": [],
+    "status": "available",
+    "restartRequired": true
+  },
+  {
+    "id": "smoothScrolling",
+    "category": "Performance",
+    "label": "Smooth scrolling in Lithium UI",
+    "type": "toggle",
+    "default": true,
+    "description": "Enable smooth scrolling on Lithium-owned pages.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "reduceBackgroundActivity",
+    "category": "Performance",
+    "label": "Reduce background activity",
+    "type": "toggle",
+    "default": true,
+    "description": "Reduce background work where supported by Chromium.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "lazyLoadImages",
+    "category": "Performance",
+    "label": "Let webpages lazy-load images",
+    "type": "toggle",
+    "default": true,
+    "description": "Image loading policy is currently controlled by Chromium and websites; a browser-level override is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "preloadPages",
+    "category": "Performance",
+    "label": "Preload popular pages",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic page preloading is intentionally not implemented because it can create extra network requests.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "performanceOverlay",
+    "category": "Performance",
+    "label": "Show performance panel",
+    "type": "toggle",
+    "default": false,
+    "description": "Developer performance dashboard is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "memorySaver",
+    "category": "Performance",
+    "label": "Memory saver",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic sleeping tabs are planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "batterySaver",
+    "category": "Performance",
+    "label": "Energy saver",
+    "type": "toggle",
+    "default": false,
+    "description": "Battery-aware throttling is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "gpuRasterization",
+    "category": "Performance",
+    "label": "GPU rasterization override",
+    "type": "toggle",
+    "default": false,
+    "description": "Manual GPU rasterization flags are not exposed in this release.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "parallelDownloading",
+    "category": "Performance",
+    "label": "Parallel download optimization",
+    "type": "toggle",
+    "default": false,
+    "description": "Chromium owns download scheduling; explicit override is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "reducedMotion",
+    "category": "Accessibility",
+    "label": "Reduce motion",
+    "type": "toggle",
+    "default": false,
+    "description": "Reduce transitions and animations in Lithium UI.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "largerText",
+    "category": "Accessibility",
+    "label": "Larger interface text",
+    "type": "toggle",
+    "default": false,
+    "description": "Increase font sizes in Lithium interface controls.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "highContrast",
+    "category": "Accessibility",
+    "label": "Increase contrast",
+    "type": "toggle",
+    "default": false,
+    "description": "Strengthen boundaries and text contrast in the interface.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "keyboardFocusRing",
+    "category": "Accessibility",
+    "label": "Emphasize keyboard focus",
+    "type": "toggle",
+    "default": true,
+    "description": "Make keyboard focus easier to see.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "tooltips",
+    "category": "Accessibility",
+    "label": "Show toolbar tooltips",
+    "type": "toggle",
+    "default": true,
+    "description": "Show labels when hovering browser buttons.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "statusAnnouncements",
+    "category": "Accessibility",
+    "label": "Announce page status",
+    "type": "toggle",
+    "default": true,
+    "description": "Expose page loading status to assistive technology.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "disableParallax",
+    "category": "Accessibility",
+    "label": "Disable parallax effects",
+    "type": "toggle",
+    "default": true,
+    "description": "This release has no parallax animation system to control.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "accessibleTabLabels",
+    "category": "Accessibility",
+    "label": "Use expanded tab labels",
+    "type": "toggle",
+    "default": false,
+    "description": "Use fuller accessibility labels on tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "screenReaderOptimizations",
+    "category": "Accessibility",
+    "label": "Screen reader optimizations",
+    "type": "toggle",
+    "default": false,
+    "description": "Additional accessibility enhancements are planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "customKeyboardShortcuts",
+    "category": "Accessibility",
+    "label": "Custom keyboard shortcuts",
+    "type": "toggle",
+    "default": false,
+    "description": "Shortcut remapping is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "developerToolsEnabled",
+    "category": "Advanced & Developer",
+    "label": "Allow Developer Tools",
+    "type": "toggle",
+    "default": true,
+    "description": "Allow DevTools using Ctrl+Shift+I on web tabs.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "showProcessDiagnostics",
+    "category": "Advanced & Developer",
+    "label": "Show process diagnostics",
+    "type": "toggle",
+    "default": true,
+    "description": "Show Electron/Chromium version and environment information.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "experimentalFeatures",
+    "category": "Advanced & Developer",
+    "label": "Enable experimental browser features",
+    "type": "toggle",
+    "default": false,
+    "description": "Experimental flags are not exposed in this release.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "proxySettings",
+    "category": "Advanced & Developer",
+    "label": "Proxy configuration",
+    "type": "select",
+    "default": "system",
+    "description": "Use the operating-system proxy settings or connect directly. Restart Lithium to apply changes.",
+    "options": [
+      [
+        "system",
+        "System proxy"
+      ],
+      [
+        "direct",
+        "Direct connection"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": true
+  },
+  {
+    "id": "customCss",
+    "category": "Advanced & Developer",
+    "label": "Custom CSS for Lithium UI",
+    "type": "toggle",
+    "default": false,
+    "description": "User CSS injection is not enabled in this build.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "autoUpdateChannel",
+    "category": "Advanced & Developer",
+    "label": "Update channel",
+    "type": "select",
+    "default": "stable",
+    "description": "Select release update channel.",
+    "options": [
+      [
+        "stable",
+        "Stable"
+      ],
+      [
+        "beta",
+        "Beta"
+      ],
+      [
+        "nightly",
+        "Nightly"
+      ]
+    ],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "exportDiagnostics",
+    "category": "Advanced & Developer",
+    "label": "Export diagnostics bundle",
+    "type": "toggle",
+    "default": true,
+    "description": "Allow exporting a local diagnostics report.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "experimentalUi",
+    "category": "Advanced & Developer",
+    "label": "Experimental UI options",
+    "type": "toggle",
+    "default": false,
+    "description": "Feature experiments are disabled by default.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "syncSettings",
+    "category": "Advanced & Developer",
+    "label": "Cloud sync",
+    "type": "toggle",
+    "default": false,
+    "description": "Lithium has no account or cloud-sync service in this build.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "extensionSupport",
+    "category": "Advanced & Developer",
+    "label": "Browser extension management",
+    "type": "toggle",
+    "default": false,
+    "description": "Full extension-management UI is not provided by this Electron shell.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "certificateViewer",
+    "category": "Advanced & Developer",
+    "label": "Certificate viewer shortcut",
+    "type": "toggle",
+    "default": false,
+    "description": "Custom certificate inspection UI is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "customProtocols",
+    "category": "Advanced & Developer",
+    "label": "Custom protocol handlers",
+    "type": "toggle",
+    "default": false,
+    "description": "Registering Lithium as a handler for custom protocols is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "remoteDebugging",
+    "category": "Advanced & Developer",
+    "label": "Remote debugging port",
+    "type": "toggle",
+    "default": false,
+    "description": "Remote debugging is disabled for security.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "updateOnMeteredNetwork",
+    "category": "Advanced & Developer",
+    "label": "Update on metered network",
+    "type": "toggle",
+    "default": false,
+    "description": "Automatic updates are not configured.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "resetSettingsButton",
+    "category": "Advanced & Developer",
+    "label": "Show reset-to-defaults action",
+    "type": "toggle",
+    "default": true,
+    "description": "Keep a visible action to restore default settings.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "blockThirdPartyMedia",
+    "category": "Privacy & Security",
+    "label": "Block third-party media requests",
+    "type": "toggle",
+    "default": false,
+    "description": "Blocking embedded third-party media is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "cookieExceptionManager",
+    "category": "Privacy & Security",
+    "label": "Cookie exception manager",
+    "type": "toggle",
+    "default": false,
+    "description": "Per-site cookie exceptions UI is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "siteDataManager",
+    "category": "Privacy & Security",
+    "label": "Site data manager",
+    "type": "toggle",
+    "default": false,
+    "description": "Advanced site-data management UI is planned.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "permissionPromptMode",
+    "category": "Privacy & Security",
+    "label": "Permission prompt behavior",
+    "type": "select",
+    "default": "deny",
+    "description": "Deny site permissions globally, or allow only permissions enabled by the individual global toggles below.",
+    "options": [
+      [
+        "deny",
+        "Deny by default"
+      ],
+      [
+        "allow-selected",
+        "Allow only global toggles"
+      ]
+    ],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "clearOnPrivateClose",
+    "category": "Privacy & Security",
+    "label": "Clear data when private window closes",
+    "type": "toggle",
+    "default": true,
+    "description": "Private-window lifecycle is not implemented yet.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "secureDownloadScan",
+    "category": "Privacy & Security",
+    "label": "Scan downloaded files",
+    "type": "toggle",
+    "default": false,
+    "description": "No external file-scanning service is included.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "customBangManager",
+    "category": "Search & Address Bar",
+    "label": "Enable custom bang manager",
+    "type": "toggle",
+    "default": true,
+    "description": "Show the form for adding, removing, importing, and exporting personal search shortcuts.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "commandLibraryAutoUpdate",
+    "category": "Search & Address Bar",
+    "label": "Automatically update bang library",
+    "type": "toggle",
+    "default": false,
+    "description": "Bang updates are user-initiated to avoid unrequested network calls.",
+    "options": [],
+    "status": "planned",
+    "restartRequired": false
+  },
+  {
+    "id": "showBangProvider",
+    "category": "Search & Address Bar",
+    "label": "Show shortcut provider in suggestion",
+    "type": "toggle",
+    "default": true,
+    "description": "Display provider name for local shortcut suggestions.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "bangOpenExternalResults",
+    "category": "Search & Address Bar",
+    "label": "Open bang results in external browser",
+    "type": "toggle",
+    "default": false,
+    "description": "Keep command navigation inside Lithium.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  },
+  {
+    "id": "allowSearchRedirects",
+    "category": "Search & Address Bar",
+    "label": "Allow custom search redirect templates",
+    "type": "toggle",
+    "default": true,
+    "description": "Permit validated HTTP(S) templates for custom engines.",
+    "options": [],
+    "status": "available",
+    "restartRequired": false
+  }
+]

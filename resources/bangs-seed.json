@@ -1,0 +1,1304 @@
+[
+  {
+    "t": "!g",
+    "s": "Google",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!google",
+    "s": "Google",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!ddg",
+    "s": "DuckDuckGo",
+    "d": "duckduckgo.com",
+    "u": "https://duckduckgo.com/?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!duck",
+    "s": "DuckDuckGo",
+    "d": "duckduckgo.com",
+    "u": "https://duckduckgo.com/?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!brave",
+    "s": "Brave Search",
+    "d": "search.brave.com",
+    "u": "https://search.brave.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!sp",
+    "s": "Startpage",
+    "d": "startpage.com",
+    "u": "https://www.startpage.com/sp/search?query={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!bing",
+    "s": "Bing",
+    "d": "bing.com",
+    "u": "https://www.bing.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!b",
+    "s": "Bing",
+    "d": "bing.com",
+    "u": "https://www.bing.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!ecosia",
+    "s": "Ecosia",
+    "d": "ecosia.org",
+    "u": "https://www.ecosia.org/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!qwant",
+    "s": "Qwant",
+    "d": "qwant.com",
+    "u": "https://www.qwant.com/?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!mojeek",
+    "s": "Mojeek",
+    "d": "mojeek.com",
+    "u": "https://www.mojeek.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!yt",
+    "s": "YouTube",
+    "d": "youtube.com",
+    "u": "https://www.youtube.com/results?search_query={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!youtube",
+    "s": "YouTube",
+    "d": "youtube.com",
+    "u": "https://www.youtube.com/results?search_query={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!ytc",
+    "s": "YouTube Channels",
+    "d": "youtube.com",
+    "u": "https://www.youtube.com/results?search_query={{{s}}}&sp=EgIQAg%3D%3D",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!ytm",
+    "s": "YouTube Music",
+    "d": "music.youtube.com",
+    "u": "https://music.youtube.com/search?q={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!ytp",
+    "s": "YouTube Playlists",
+    "d": "youtube.com",
+    "u": "https://www.youtube.com/results?search_query={{{s}}}&sp=EgIQAw%3D%3D",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!ytv",
+    "s": "YouTube Videos",
+    "d": "youtube.com",
+    "u": "https://www.youtube.com/results?search_query={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!w",
+    "s": "Wikipedia",
+    "d": "wikipedia.org",
+    "u": "https://en.wikipedia.org/w/index.php?search={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!wiki",
+    "s": "Wikipedia",
+    "d": "wikipedia.org",
+    "u": "https://en.wikipedia.org/w/index.php?search={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!r",
+    "s": "Reddit",
+    "d": "reddit.com",
+    "u": "https://www.reddit.com/search/?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!reddit",
+    "s": "Reddit",
+    "d": "reddit.com",
+    "u": "https://www.reddit.com/search/?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!gh",
+    "s": "GitHub",
+    "d": "github.com",
+    "u": "https://github.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!github",
+    "s": "GitHub",
+    "d": "github.com",
+    "u": "https://github.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!gitlab",
+    "s": "GitLab",
+    "d": "gitlab.com",
+    "u": "https://gitlab.com/search?search={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!so",
+    "s": "Stack Overflow",
+    "d": "stackoverflow.com",
+    "u": "https://stackoverflow.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!mdn",
+    "s": "MDN Web Docs",
+    "d": "developer.mozilla.org",
+    "u": "https://developer.mozilla.org/en-US/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!npm",
+    "s": "npm",
+    "d": "npmjs.com",
+    "u": "https://www.npmjs.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!pypi",
+    "s": "PyPI",
+    "d": "pypi.org",
+    "u": "https://pypi.org/search/?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!crates",
+    "s": "crates.io",
+    "d": "crates.io",
+    "u": "https://crates.io/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!docker",
+    "s": "Docker Hub",
+    "d": "hub.docker.com",
+    "u": "https://hub.docker.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!docs",
+    "s": "Google Docs search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=site%3Adocs.google.com+{{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!amazon",
+    "s": "Amazon",
+    "d": "amazon.com",
+    "u": "https://www.amazon.com/s?k={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!a",
+    "s": "Amazon",
+    "d": "amazon.com",
+    "u": "https://www.amazon.com/s?k={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!flipkart",
+    "s": "Flipkart",
+    "d": "flipkart.com",
+    "u": "https://www.flipkart.com/search?q={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!ebay",
+    "s": "eBay",
+    "d": "ebay.com",
+    "u": "https://www.ebay.com/sch/i.html?_nkw={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!etsy",
+    "s": "Etsy",
+    "d": "etsy.com",
+    "u": "https://www.etsy.com/search?q={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!walmart",
+    "s": "Walmart",
+    "d": "walmart.com",
+    "u": "https://www.walmart.com/search?q={{{s}}}",
+    "c": "Shopping"
+  },
+  {
+    "t": "!maps",
+    "s": "Google Maps",
+    "d": "google.com",
+    "u": "https://www.google.com/maps/search/{{{s}}}",
+    "c": "Maps"
+  },
+  {
+    "t": "!map",
+    "s": "Google Maps",
+    "d": "google.com",
+    "u": "https://www.google.com/maps/search/{{{s}}}",
+    "c": "Maps"
+  },
+  {
+    "t": "!osm",
+    "s": "OpenStreetMap",
+    "d": "openstreetmap.org",
+    "u": "https://www.openstreetmap.org/search?query={{{s}}}",
+    "c": "Maps"
+  },
+  {
+    "t": "!imdb",
+    "s": "IMDb",
+    "d": "imdb.com",
+    "u": "https://www.imdb.com/find/?q={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!tmdb",
+    "s": "TMDB",
+    "d": "themoviedb.org",
+    "u": "https://www.themoviedb.org/search?query={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!spotify",
+    "s": "Spotify",
+    "d": "spotify.com",
+    "u": "https://open.spotify.com/search/{{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!soundcloud",
+    "s": "SoundCloud",
+    "d": "soundcloud.com",
+    "u": "https://soundcloud.com/search?q={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!bandcamp",
+    "s": "Bandcamp",
+    "d": "bandcamp.com",
+    "u": "https://bandcamp.com/search?q={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!x",
+    "s": "X",
+    "d": "x.com",
+    "u": "https://x.com/search?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!twitter",
+    "s": "X",
+    "d": "x.com",
+    "u": "https://x.com/search?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!instagram",
+    "s": "Instagram",
+    "d": "instagram.com",
+    "u": "https://www.google.com/search?q=site%3Ainstagram.com+{{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!tiktok",
+    "s": "TikTok",
+    "d": "tiktok.com",
+    "u": "https://www.tiktok.com/search?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!facebook",
+    "s": "Facebook",
+    "d": "facebook.com",
+    "u": "https://www.facebook.com/search/top?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!linkedin",
+    "s": "LinkedIn",
+    "d": "linkedin.com",
+    "u": "https://www.linkedin.com/search/results/all/?keywords={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!news",
+    "s": "Google News",
+    "d": "news.google.com",
+    "u": "https://news.google.com/search?q={{{s}}}",
+    "c": "News"
+  },
+  {
+    "t": "!reuters",
+    "s": "Reuters",
+    "d": "reuters.com",
+    "u": "https://www.reuters.com/site-search/?query={{{s}}}",
+    "c": "News"
+  },
+  {
+    "t": "!translate",
+    "s": "Google Translate",
+    "d": "translate.google.com",
+    "u": "https://translate.google.com/?sl=auto&tl=en&text={{{s}}}&op=translate",
+    "c": "Reference"
+  },
+  {
+    "t": "!dict",
+    "s": "Dictionary.com",
+    "d": "dictionary.com",
+    "u": "https://www.dictionary.com/browse/{{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!merriam",
+    "s": "Merriam-Webster",
+    "d": "merriam-webster.com",
+    "u": "https://www.merriam-webster.com/dictionary/{{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!thesaurus",
+    "s": "Thesaurus.com",
+    "d": "thesaurus.com",
+    "u": "https://www.thesaurus.com/browse/{{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!wolfram",
+    "s": "WolframAlpha",
+    "d": "wolframalpha.com",
+    "u": "https://www.wolframalpha.com/input?i={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!scholar",
+    "s": "Google Scholar",
+    "d": "scholar.google.com",
+    "u": "https://scholar.google.com/scholar?q={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!arxiv",
+    "s": "arXiv",
+    "d": "arxiv.org",
+    "u": "https://arxiv.org/search/?query={{{s}}}&searchtype=all",
+    "c": "Research"
+  },
+  {
+    "t": "!pubmed",
+    "s": "PubMed",
+    "d": "pubmed.ncbi.nlm.nih.gov",
+    "u": "https://pubmed.ncbi.nlm.nih.gov/?term={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!weather",
+    "s": "Weather search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=weather+{{{s}}}",
+    "c": "Utilities"
+  },
+  {
+    "t": "!time",
+    "s": "Time search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=time+in+{{{s}}}",
+    "c": "Utilities"
+  },
+  {
+    "t": "!archive",
+    "s": "Internet Archive",
+    "d": "archive.org",
+    "u": "https://archive.org/search?query={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!wayback",
+    "s": "Wayback Machine",
+    "d": "web.archive.org",
+    "u": "https://web.archive.org/web/*/{{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!whois",
+    "s": "WHOIS search",
+    "d": "who.is",
+    "u": "https://who.is/whois/{{{s}}}",
+    "c": "Developer Tools"
+  },
+  {
+    "t": "!crunchbase",
+    "s": "Crunchbase",
+    "d": "crunchbase.com",
+    "u": "https://www.google.com/search?q=site%3Acrunchbase.com+{{{s}}}",
+    "c": "Business"
+  },
+  {
+    "t": "!producthunt",
+    "s": "Product Hunt",
+    "d": "producthunt.com",
+    "u": "https://www.producthunt.com/search?q={{{s}}}",
+    "c": "Business"
+  },
+  {
+    "t": "!medium",
+    "s": "Medium",
+    "d": "medium.com",
+    "u": "https://medium.com/search?q={{{s}}}",
+    "c": "Reading"
+  },
+  {
+    "t": "!substack",
+    "s": "Substack",
+    "d": "substack.com",
+    "u": "https://substack.com/search/{{{s}}}",
+    "c": "Reading"
+  },
+  {
+    "t": "!goodreads",
+    "s": "Goodreads",
+    "d": "goodreads.com",
+    "u": "https://www.goodreads.com/search?q={{{s}}}",
+    "c": "Books"
+  },
+  {
+    "t": "!steam",
+    "s": "Steam",
+    "d": "steampowered.com",
+    "u": "https://store.steampowered.com/search/?term={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!roblox",
+    "s": "Roblox",
+    "d": "roblox.com",
+    "u": "https://www.roblox.com/search/experiences?keyword={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!minecraft",
+    "s": "Minecraft Wiki",
+    "d": "minecraft.wiki",
+    "u": "https://minecraft.wiki/w/Special:Search?search={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!twitch",
+    "s": "Twitch",
+    "d": "twitch.tv",
+    "u": "https://www.twitch.tv/search?term={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!googleimages",
+    "s": "Google Images",
+    "d": "google.com",
+    "u": "https://www.google.com/search?tbm=isch&q={{{s}}}",
+    "c": "Images"
+  },
+  {
+    "t": "!images",
+    "s": "Google Images",
+    "d": "google.com",
+    "u": "https://www.google.com/search?tbm=isch&q={{{s}}}",
+    "c": "Images"
+  },
+  {
+    "t": "!unsplash",
+    "s": "Unsplash",
+    "d": "unsplash.com",
+    "u": "https://unsplash.com/s/photos/{{{s}}}",
+    "c": "Images"
+  },
+  {
+    "t": "!pexels",
+    "s": "Pexels",
+    "d": "pexels.com",
+    "u": "https://www.pexels.com/search/{{{s}}}/",
+    "c": "Images"
+  },
+  {
+    "t": "!reddituser",
+    "s": "Reddit users",
+    "d": "reddit.com",
+    "u": "https://www.reddit.com/user/{{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!discord",
+    "s": "Discord discovery search",
+    "d": "discord.com",
+    "u": "https://www.google.com/search?q=site%3Adiscord.com+{{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!rust",
+    "s": "Rust docs",
+    "d": "doc.rust-lang.org",
+    "u": "https://doc.rust-lang.org/std/?search={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!go",
+    "s": "Go package docs",
+    "d": "pkg.go.dev",
+    "u": "https://pkg.go.dev/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!python",
+    "s": "Python docs",
+    "d": "docs.python.org",
+    "u": "https://docs.python.org/3/search.html?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!javascript",
+    "s": "JavaScript MDN",
+    "d": "developer.mozilla.org",
+    "u": "https://developer.mozilla.org/en-US/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!css",
+    "s": "CSS MDN",
+    "d": "developer.mozilla.org",
+    "u": "https://developer.mozilla.org/en-US/search?q=CSS+{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!html",
+    "s": "HTML MDN",
+    "d": "developer.mozilla.org",
+    "u": "https://developer.mozilla.org/en-US/search?q=HTML+{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!npmjs",
+    "s": "npm",
+    "d": "npmjs.com",
+    "u": "https://www.npmjs.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!stackoverflow",
+    "s": "Stack Overflow",
+    "d": "stackoverflow.com",
+    "u": "https://stackoverflow.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!serverfault",
+    "s": "Server Fault",
+    "d": "serverfault.com",
+    "u": "https://serverfault.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!superuser",
+    "s": "Super User",
+    "d": "superuser.com",
+    "u": "https://superuser.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!kagi",
+    "s": "Kagi",
+    "d": "kagi.com",
+    "u": "https://kagi.com/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!startpage",
+    "s": "Startpage",
+    "d": "startpage.com",
+    "u": "https://www.startpage.com/sp/search?query={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!apple",
+    "s": "Apple",
+    "d": "apple.com",
+    "u": "https://www.google.com/search?q=site%3Aapple.com+{{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!microsoft",
+    "s": "Microsoft",
+    "d": "microsoft.com",
+    "u": "https://www.google.com/search?q=site%3Amicrosoft.com+{{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!support",
+    "s": "Support search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q={{{s}}}+support",
+    "c": "Reference"
+  },
+  {
+    "t": "!yelp",
+    "s": "Yelp",
+    "d": "yelp.com",
+    "u": "https://www.yelp.com/search?find_desc={{{s}}}",
+    "c": "Local"
+  },
+  {
+    "t": "!tripadvisor",
+    "s": "Tripadvisor",
+    "d": "tripadvisor.com",
+    "u": "https://www.tripadvisor.com/Search?q={{{s}}}",
+    "c": "Travel"
+  },
+  {
+    "t": "!airbnb",
+    "s": "Airbnb",
+    "d": "airbnb.com",
+    "u": "https://www.airbnb.com/s/{{{s}}}/homes",
+    "c": "Travel"
+  },
+  {
+    "t": "!booking",
+    "s": "Booking.com",
+    "d": "booking.com",
+    "u": "https://www.booking.com/searchresults.html?ss={{{s}}}",
+    "c": "Travel"
+  },
+  {
+    "t": "!expedia",
+    "s": "Expedia",
+    "d": "expedia.com",
+    "u": "https://www.expedia.com/Hotel-Search?destination={{{s}}}",
+    "c": "Travel"
+  },
+  {
+    "t": "!indeed",
+    "s": "Indeed",
+    "d": "indeed.com",
+    "u": "https://www.indeed.com/jobs?q={{{s}}}",
+    "c": "Jobs"
+  },
+  {
+    "t": "!glassdoor",
+    "s": "Glassdoor",
+    "d": "glassdoor.com",
+    "u": "https://www.glassdoor.com/Job/jobs.htm?sc.keyword={{{s}}}",
+    "c": "Jobs"
+  },
+  {
+    "t": "!coursera",
+    "s": "Coursera",
+    "d": "coursera.org",
+    "u": "https://www.coursera.org/search?query={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!udemy",
+    "s": "Udemy",
+    "d": "udemy.com",
+    "u": "https://www.udemy.com/courses/search/?q={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!edx",
+    "s": "edX",
+    "d": "edx.org",
+    "u": "https://www.edx.org/search?q={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!khan",
+    "s": "Khan Academy",
+    "d": "khanacademy.org",
+    "u": "https://www.khanacademy.org/search?page_search_query={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!canva",
+    "s": "Canva",
+    "d": "canva.com",
+    "u": "https://www.canva.com/search?q={{{s}}}",
+    "c": "Design"
+  },
+  {
+    "t": "!figma",
+    "s": "Figma community",
+    "d": "figma.com",
+    "u": "https://www.figma.com/community/search?query={{{s}}}",
+    "c": "Design"
+  },
+  {
+    "t": "!dribbble",
+    "s": "Dribbble",
+    "d": "dribbble.com",
+    "u": "https://dribbble.com/search/{{{s}}}",
+    "c": "Design"
+  },
+  {
+    "t": "!behance",
+    "s": "Behance",
+    "d": "behance.net",
+    "u": "https://www.behance.net/search/projects?search={{{s}}}",
+    "c": "Design"
+  },
+  {
+    "t": "!deviantart",
+    "s": "DeviantArt",
+    "d": "deviantart.com",
+    "u": "https://www.deviantart.com/search?q={{{s}}}",
+    "c": "Art"
+  },
+  {
+    "t": "!pixabay",
+    "s": "Pixabay",
+    "d": "pixabay.com",
+    "u": "https://pixabay.com/images/search/{{{s}}}/",
+    "c": "Images"
+  },
+  {
+    "t": "!giphy",
+    "s": "GIPHY",
+    "d": "giphy.com",
+    "u": "https://giphy.com/search/{{{s}}}",
+    "c": "Images"
+  },
+  {
+    "t": "!tenor",
+    "s": "Tenor",
+    "d": "tenor.com",
+    "u": "https://tenor.com/search/{{{s}}}-gifs",
+    "c": "Images"
+  },
+  {
+    "t": "!archiveorg",
+    "s": "Internet Archive",
+    "d": "archive.org",
+    "u": "https://archive.org/search?query={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!libgenquery",
+    "s": "Book search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=books+{{{s}}}",
+    "c": "Books"
+  },
+  {
+    "t": "!openlibrary",
+    "s": "Open Library",
+    "d": "openlibrary.org",
+    "u": "https://openlibrary.org/search?q={{{s}}}",
+    "c": "Books"
+  },
+  {
+    "t": "!goodreadsbooks",
+    "s": "Goodreads",
+    "d": "goodreads.com",
+    "u": "https://www.goodreads.com/search?q={{{s}}}",
+    "c": "Books"
+  },
+  {
+    "t": "!letterboxd",
+    "s": "Letterboxd",
+    "d": "letterboxd.com",
+    "u": "https://letterboxd.com/search/{{{s}}}/",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!rottentomatoes",
+    "s": "Rotten Tomatoes",
+    "d": "rottentomatoes.com",
+    "u": "https://www.rottentomatoes.com/search?search={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!metacritic",
+    "s": "Metacritic",
+    "d": "metacritic.com",
+    "u": "https://www.metacritic.com/search/{{{s}}}/",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!itch",
+    "s": "itch.io",
+    "d": "itch.io",
+    "u": "https://itch.io/search?q={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!nexusmods",
+    "s": "Nexus Mods",
+    "d": "nexusmods.com",
+    "u": "https://www.nexusmods.com/search/?gsearch={{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!fandom",
+    "s": "Fandom",
+    "d": "fandom.com",
+    "u": "https://www.google.com/search?q=site%3Afandom.com+{{{s}}}",
+    "c": "Gaming"
+  },
+  {
+    "t": "!bluesky",
+    "s": "Bluesky",
+    "d": "bsky.app",
+    "u": "https://bsky.app/search?q={{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!mastodon",
+    "s": "Mastodon posts",
+    "d": "mastodon.social",
+    "u": "https://mastodon.social/tags/{{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!threads",
+    "s": "Threads",
+    "d": "threads.net",
+    "u": "https://www.google.com/search?q=site%3Athreads.net+{{{s}}}",
+    "c": "Social"
+  },
+  {
+    "t": "!pinterest",
+    "s": "Pinterest",
+    "d": "pinterest.com",
+    "u": "https://www.pinterest.com/search/pins/?q={{{s}}}",
+    "c": "Images"
+  },
+  {
+    "t": "!linkedinjobs",
+    "s": "LinkedIn jobs",
+    "d": "linkedin.com",
+    "u": "https://www.linkedin.com/jobs/search/?keywords={{{s}}}",
+    "c": "Jobs"
+  },
+  {
+    "t": "!levels",
+    "s": "Levels.fyi",
+    "d": "levels.fyi",
+    "u": "https://www.levels.fyi/search/?q={{{s}}}",
+    "c": "Jobs"
+  },
+  {
+    "t": "!salary",
+    "s": "Salary search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=salary+{{{s}}}",
+    "c": "Jobs"
+  },
+  {
+    "t": "!mdncss",
+    "s": "MDN CSS",
+    "d": "developer.mozilla.org",
+    "u": "https://developer.mozilla.org/en-US/search?q=CSS+{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!webdev",
+    "s": "Web.dev",
+    "d": "web.dev",
+    "u": "https://web.dev/search/?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!canIUse",
+    "s": "Can I use",
+    "d": "caniuse.com",
+    "u": "https://caniuse.com/?search={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!npmstat",
+    "s": "npm trends",
+    "d": "npmtrends.com",
+    "u": "https://npmtrends.com/{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!bundlephobia",
+    "s": "Bundlephobia",
+    "d": "bundlephobia.com",
+    "u": "https://bundlephobia.com/package/{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!unpkg",
+    "s": "UNPKG",
+    "d": "unpkg.com",
+    "u": "https://unpkg.com/browse/{{{s}}}/",
+    "c": "Programming"
+  },
+  {
+    "t": "!githubcode",
+    "s": "GitHub code",
+    "d": "github.com",
+    "u": "https://github.com/search?q={{{s}}}&type=code",
+    "c": "Programming"
+  },
+  {
+    "t": "!githubissues",
+    "s": "GitHub issues",
+    "d": "github.com",
+    "u": "https://github.com/search?q={{{s}}}&type=issues",
+    "c": "Programming"
+  },
+  {
+    "t": "!git",
+    "s": "Git docs",
+    "d": "git-scm.com",
+    "u": "https://git-scm.com/search/results?search={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!regex",
+    "s": "Regex101",
+    "d": "regex101.com",
+    "u": "https://www.google.com/search?q=site%3Aregex101.com+{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!npmrepo",
+    "s": "GitHub npm packages",
+    "d": "github.com",
+    "u": "https://github.com/search?q={{{s}}}+npm",
+    "c": "Programming"
+  },
+  {
+    "t": "!codepen",
+    "s": "CodePen",
+    "d": "codepen.io",
+    "u": "https://codepen.io/search/pens?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!replit",
+    "s": "Replit",
+    "d": "replit.com",
+    "u": "https://replit.com/search?q={{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!glitch",
+    "s": "Glitch",
+    "d": "glitch.com",
+    "u": "https://www.google.com/search?q=site%3Aglitch.com+{{{s}}}",
+    "c": "Programming"
+  },
+  {
+    "t": "!notion",
+    "s": "Notion",
+    "d": "notion.so",
+    "u": "https://www.google.com/search?q=site%3Anotion.so+{{{s}}}",
+    "c": "Productivity"
+  },
+  {
+    "t": "!trello",
+    "s": "Trello",
+    "d": "trello.com",
+    "u": "https://trello.com/search?q={{{s}}}",
+    "c": "Productivity"
+  },
+  {
+    "t": "!asana",
+    "s": "Asana",
+    "d": "asana.com",
+    "u": "https://www.google.com/search?q=site%3Aasana.com+{{{s}}}",
+    "c": "Productivity"
+  },
+  {
+    "t": "!monday",
+    "s": "Monday.com",
+    "d": "monday.com",
+    "u": "https://www.google.com/search?q=site%3Amonday.com+{{{s}}}",
+    "c": "Productivity"
+  },
+  {
+    "t": "!yahoo",
+    "s": "Yahoo Search",
+    "d": "search.yahoo.com",
+    "u": "https://search.yahoo.com/search?p={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!ask",
+    "s": "Ask.com",
+    "d": "ask.com",
+    "u": "https://www.ask.com/web?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!swisscows",
+    "s": "Swisscows",
+    "d": "swisscows.com",
+    "u": "https://swisscows.com/en/web?query={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!searx",
+    "s": "SearXNG search",
+    "d": "searx.be",
+    "u": "https://searx.be/search?q={{{s}}}",
+    "c": "Search Engines"
+  },
+  {
+    "t": "!wikidata",
+    "s": "Wikidata",
+    "d": "wikidata.org",
+    "u": "https://www.wikidata.org/w/index.php?search={{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!wiktionary",
+    "s": "Wiktionary",
+    "d": "wiktionary.org",
+    "u": "https://en.wiktionary.org/w/index.php?search={{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!britannica",
+    "s": "Britannica",
+    "d": "britannica.com",
+    "u": "https://www.britannica.com/search?query={{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!history",
+    "s": "History search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=history+{{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!calculator",
+    "s": "Calculator search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=calculator+{{{s}}}",
+    "c": "Utilities"
+  },
+  {
+    "t": "!currency",
+    "s": "Currency conversion search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=convert+{{{s}}}",
+    "c": "Utilities"
+  },
+  {
+    "t": "!unit",
+    "s": "Unit conversion search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=unit+conversion+{{{s}}}",
+    "c": "Utilities"
+  },
+  {
+    "t": "!mapsgoogle",
+    "s": "Google Maps",
+    "d": "google.com",
+    "u": "https://www.google.com/maps/search/{{{s}}}",
+    "c": "Maps"
+  },
+  {
+    "t": "!restaurant",
+    "s": "Restaurant search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=restaurants+{{{s}}}",
+    "c": "Local"
+  },
+  {
+    "t": "!nearby",
+    "s": "Nearby search",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=nearby+{{{s}}}",
+    "c": "Local"
+  },
+  {
+    "t": "!ycombinator",
+    "s": "Hacker News",
+    "d": "news.ycombinator.com",
+    "u": "https://hn.algolia.com/?q={{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!hn",
+    "s": "Hacker News",
+    "d": "news.ycombinator.com",
+    "u": "https://hn.algolia.com/?q={{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!lobsters",
+    "s": "Lobsters",
+    "d": "lobste.rs",
+    "u": "https://lobste.rs/search?q={{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!producthuntnews",
+    "s": "Product Hunt",
+    "d": "producthunt.com",
+    "u": "https://www.producthunt.com/search?q={{{s}}}",
+    "c": "Technology"
+  },
+  {
+    "t": "!indiehackers",
+    "s": "Indie Hackers",
+    "d": "indiehackers.com",
+    "u": "https://www.google.com/search?q=site%3Aindiehackers.com+{{{s}}}",
+    "c": "Business"
+  },
+  {
+    "t": "!crunchyroll",
+    "s": "Crunchyroll",
+    "d": "crunchyroll.com",
+    "u": "https://www.crunchyroll.com/search?q={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!anime",
+    "s": "Anime search",
+    "d": "myanimelist.net",
+    "u": "https://myanimelist.net/anime.php?q={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!manga",
+    "s": "Manga search",
+    "d": "myanimelist.net",
+    "u": "https://myanimelist.net/manga.php?q={{{s}}}",
+    "c": "Entertainment"
+  },
+  {
+    "t": "!dailymotion",
+    "s": "Dailymotion",
+    "d": "dailymotion.com",
+    "u": "https://www.dailymotion.com/search/{{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!vimeo",
+    "s": "Vimeo",
+    "d": "vimeo.com",
+    "u": "https://vimeo.com/search?q={{{s}}}",
+    "c": "Multimedia"
+  },
+  {
+    "t": "!ted",
+    "s": "TED",
+    "d": "ted.com",
+    "u": "https://www.ted.com/search?q={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!wikihow",
+    "s": "wikiHow",
+    "d": "wikihow.com",
+    "u": "https://www.wikihow.com/wikiHowTo?search={{{s}}}",
+    "c": "Learning"
+  },
+  {
+    "t": "!allrecipes",
+    "s": "Allrecipes",
+    "d": "allrecipes.com",
+    "u": "https://www.allrecipes.com/search?q={{{s}}}",
+    "c": "Food"
+  },
+  {
+    "t": "!seriouseats",
+    "s": "Serious Eats",
+    "d": "seriouseats.com",
+    "u": "https://www.seriouseats.com/search?q={{{s}}}",
+    "c": "Food"
+  },
+  {
+    "t": "!healthline",
+    "s": "Healthline",
+    "d": "healthline.com",
+    "u": "https://www.healthline.com/search?q={{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!nhs",
+    "s": "NHS",
+    "d": "nhs.uk",
+    "u": "https://www.nhs.uk/search/results?q={{{s}}}",
+    "c": "Reference"
+  },
+  {
+    "t": "!gov",
+    "s": "Government sites",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=site%3Agov+{{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!edu",
+    "s": "Education sites",
+    "d": "google.com",
+    "u": "https://www.google.com/search?q=site%3Aedu+{{{s}}}",
+    "c": "Research"
+  },
+  {
+    "t": "!indiapost",
+    "s": "India Post",
+    "d": "indiapost.gov.in",
+    "u": "https://www.google.com/search?q=site%3Aindiapost.gov.in+{{{s}}}",
+    "c": "India"
+  },
+  {
+    "t": "!irctc",
+    "s": "IRCTC",
+    "d": "irctc.co.in",
+    "u": "https://www.google.com/search?q=site%3Airctc.co.in+{{{s}}}",
+    "c": "India"
+  },
+  {
+    "t": "!incometax",
+    "s": "Income Tax India",
+    "d": "incometax.gov.in",
+    "u": "https://www.google.com/search?q=site%3Aincometax.gov.in+{{{s}}}",
+    "c": "India"
+  },
+  {
+    "t": "!meity",
+    "s": "MeitY",
+    "d": "meity.gov.in",
+    "u": "https://www.google.com/search?q=site%3Ameity.gov.in+{{{s}}}",
+    "c": "India"
+  }
+]

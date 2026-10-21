@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'">
+  <title>Lithium Browser</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="renderer.js" defer></script>
+</head>
+<body>
+  <div id="app-root" class="app-root" data-theme="dark" data-density="comfortable" data-tab-position="top">
+    <header class="titlebar" id="titlebar">
+      <div class="brand drag-region" title="Lithium Browser">
+        <div class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15.5"/><ellipse cx="20" cy="20" rx="6.6" ry="15.5"/><ellipse cx="20" cy="20" rx="15.5" ry="6.6"/><circle class="brand-core" cx="20" cy="20" r="3.1"/></svg></div>
+        <div class="brand-copy"><span class="brand-name">Lithium</span><span class="brand-subtitle">PRIVATE BROWSING</span></div>
+        <span class="brand-version" id="brand-version">PREVIEW</span>
+      </div>
+      <div class="titlebar-spacer drag-region"></div>
+      <div class="window-actions no-drag">
+        <button class="window-action" id="window-minimize" title="Minimize" aria-label="Minimize"><span class="icon icon-minimize"></span></button>
+        <button class="window-action" id="window-maximize" title="Maximize" aria-label="Maximize"><span class="icon icon-maximize"></span></button>
+        <button class="window-action close-action" id="window-close" title="Close" aria-label="Close"><span class="icon icon-close"></span></button>
+      </div>
+    </header>
+
+    <nav id="tab-strip" class="tab-strip" aria-label="Browser tabs" role="tablist"></nav>
+
+    <div id="toolbar" class="toolbar">
+      <div class="nav-controls">
+        <button class="icon-button" id="nav-back" title="Back (Alt+Left)" aria-label="Back"><svg viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7"/></svg></button>
+        <button class="icon-button" id="nav-forward" title="Forward (Alt+Right)" aria-label="Forward"><svg viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7"/></svg></button>
+        <button class="icon-button" id="nav-reload" title="Reload (Ctrl+R)" aria-label="Reload"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4.7 9a7 7 0 0 1 12-2L20 12M4 17v-5h5m10.3 3a7 7 0 0 1-12 2L4 12"/></svg></button>
+        <button class="icon-button home-button" id="nav-home" title="Home" aria-label="Home"><svg viewBox="0 0 24 24"><path d="m3.5 10 8.5-7 8.5 7v10a1 1 0 0 1-1 1h-5.2v-6.5h-4.6V21H4.5a1 1 0 0 1-1-1z"/></svg></button>
+      </div>
+      <div class="address-shell" id="address-shell">
+        <span class="address-state" id="address-state" title="Privacy status"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5-3.5 8.2-8 10-4.5-1.8-8-5-8-10V6z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span>
+        <input id="address-bar" class="address-bar" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Search or enter address" placeholder="Search privately or enter an address" />
+        <span class="engine-indicator" id="engine-indicator">DDG</span>
+        <div id="address-suggestions" class="suggestions hidden" role="listbox"></div>
+      </div>
+      <div class="toolbar-actions">
+        <button class="icon-button bookmark-button" id="nav-bookmark" title="Bookmark this page (Ctrl+D)" aria-label="Bookmark page"><svg viewBox="0 0 24 24"><path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4z"/></svg></button>
+        <button class="icon-button shield-button" id="nav-shield" title="Privacy controls" aria-label="Privacy controls"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5-3.5 8.2-8 10-4.5-1.8-8-5-8-10V6z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></button>
+        <button class="icon-button downloads-button" id="nav-downloads" title="Downloads (Ctrl+J)" aria-label="Downloads"><svg viewBox="0 0 24 24"><path d="M12 3v11m-4-4 4 4 4-4M4 17v3h16v-3"/></svg></button>
+        <button class="icon-button menu-button" id="app-menu-button" title="Lithium menu" aria-label="Lithium menu"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/></svg></button>
+        <div id="app-menu" class="menu-popover hidden"></div>
+      </div>
+    </div>
+
+    <div id="bookmarks-bar" class="bookmarks-bar"></div>
+
+    <div id="workspace" class="workspace">
+      <aside id="sidebar" class="sidebar hidden" aria-label="Browser side panel">
+        <button data-route="bookmarks" class="sidebar-action" title="Bookmarks"><span class="sidebar-symbol">✧</span><span>Bookmarks</span></button>
+        <button data-route="history" class="sidebar-action" title="History"><span class="sidebar-symbol">◷</span><span>History</span></button>
+        <button data-route="downloads" class="sidebar-action" title="Downloads"><span class="sidebar-symbol">↓</span><span>Downloads</span></button>
+        <button data-route="commands" class="sidebar-action" title="Search commands"><span class="sidebar-symbol">⌘</span><span>Commands</span></button>
+        <div class="sidebar-bottom"><button data-route="settings" class="sidebar-action" title="Settings"><span class="sidebar-symbol">⚙</span><span>Settings</span></button></div>
+      </aside>
+      <main id="browser-stage" class="browser-stage">
+        <div id="page-content" class="page-content" aria-live="polite"></div>
+        <div id="stage-toast" class="stage-toast hidden" role="status"></div>
+      </main>
+      <aside id="sidebar-right" class="sidebar right-sidebar hidden" aria-label="Right browser side panel"></aside>
+    </div>
+
+    <footer id="statusbar" class="statusbar">
+      <div class="status-left"><span class="status-dot" id="status-dot"></span><span id="status-message">Ready · no account · no telemetry</span></div>
+      <div class="status-right"><span id="bang-count">186 local commands</span><span class="status-separator">·</span><span id="status-engine">DuckDuckGo</span><span class="status-separator">·</span><span id="status-version">v0.1.0</span></div>
+    </footer>
+  </div>
+</body>
+</html>

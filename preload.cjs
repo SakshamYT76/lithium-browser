@@ -1,0 +1,60 @@
+'use strict';
+const { contextBridge, ipcRenderer } = require('electron');
+
+function subscribe(channel, callback) {
+  const listener = (_event, payload) => callback(payload);
+  ipcRenderer.on(channel, listener);
+  return () => ipcRenderer.removeListener(channel, listener);
+}
+
+contextBridge.exposeInMainWorld('lithium', Object.freeze({
+  appInfo: () => ipcRenderer.invoke('app:info'),
+  getState: () => ipcRenderer.invoke('state:get'),
+  getSettings: () => ipcRenderer.invoke('settings:get'),
+  getCatalog: () => ipcRenderer.invoke('settings:catalog'),
+  updateSetting: (key, value) => ipcRenderer.invoke('settings:update', key, value),
+  resetSettings: () => ipcRenderer.invoke('settings:reset'),
+  exportSettings: () => ipcRenderer.invoke('settings:export'),
+  importSettings: () => ipcRenderer.invoke('settings:import'),
+  resolveInput: input => ipcRenderer.invoke('browser:resolve-input', input),
+  navigate: (tabId, url, metadata) => ipcRenderer.invoke('browser:navigate', tabId, url, metadata || {}),
+  openInternal: route => ipcRenderer.invoke('browser:internal', route),
+  newTab: options => ipcRenderer.invoke('browser:new-tab', options || {}),
+  activateTab: tabId => ipcRenderer.invoke('browser:activate-tab', tabId),
+  closeTab: tabId => ipcRenderer.invoke('browser:close-tab', tabId),
+  back: tabId => ipcRenderer.invoke('browser:back', tabId),
+  forward: tabId => ipcRenderer.invoke('browser:forward', tabId),
+  reload: tabId => ipcRenderer.invoke('browser:reload', tabId),
+  home: tabId => ipcRenderer.invoke('browser:home', tabId),
+  bookmarkToggle: tabId => ipcRenderer.invoke('browser:bookmark-toggle', tabId),
+  reopenClosed: () => ipcRenderer.invoke('browser:reopen-closed'),
+  setViewLayout: (tabId, rect) => ipcRenderer.invoke('browser:set-view-layout', tabId, rect),
+  setViewMode: (tabId, mode) => ipcRenderer.invoke('browser:set-view-mode', tabId, mode),
+  setZoom: (tabId, factor) => ipcRenderer.invoke('browser:set-zoom', tabId, factor),
+  getHistory: () => ipcRenderer.invoke('history:get'),
+  clearHistory: () => ipcRenderer.invoke('history:clear'),
+  getBookmarks: () => ipcRenderer.invoke('bookmarks:get'),
+  addBookmark: (url, title) => ipcRenderer.invoke('bookmarks:add', url, title),
+  removeBookmark: id => ipcRenderer.invoke('bookmarks:remove', id),
+  getDownloads: () => ipcRenderer.invoke('downloads:get'),
+  openDownloadsFolder: () => ipcRenderer.invoke('downloads:open-folder'),
+  clearDownloads: () => ipcRenderer.invoke('downloads:clear'),
+  searchCommands: (query, limit) => ipcRenderer.invoke('commands:search', query, limit),
+  listCommands: options => ipcRenderer.invoke('commands:list', options || {}),
+  addCustomCommand: command => ipcRenderer.invoke('commands:add-custom', command || {}),
+  removeCustomCommand: command => ipcRenderer.invoke('commands:remove-custom', command),
+  importCustomCommands: () => ipcRenderer.invoke('commands:import-custom'),
+  exportCustomCommands: () => ipcRenderer.invoke('commands:export-custom'),
+  refreshCommands: () => ipcRenderer.invoke('commands:refresh'),
+  windowControl: action => ipcRenderer.invoke('window:control', action),
+  isMaximized: () => ipcRenderer.invoke('window:maximized'),
+  openExternal: url => ipcRenderer.invoke('app:open-external', url),
+  exportDiagnostics: () => ipcRenderer.invoke('app:export-diagnostics'),
+  onState: callback => subscribe('state:changed', callback),
+  onSettingsChanged: callback => subscribe('settings:changed', callback),
+  onFocusAddress: callback => subscribe('ui:focus-address', callback),
+  onLoadError: callback => subscribe('browser:load-error', callback),
+  onRenderGone: callback => subscribe('browser:render-gone', callback),
+  onDownloadsChanged: callback => subscribe('downloads:changed', callback),
+  onMaximizedChanged: callback => subscribe('window:maximized-changed', callback),
+}));
